@@ -1,0 +1,44 @@
+<!-- index html files -->
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <h1>FeedBack Form</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="CustomerName" placeholder="Customer Name">
+                <input type="text" name="FeedBack" placeholder="FeedBack">
+                <button>Add FeedBack</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+      
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyC0ZHtN5zE4kK4Tkj3gSasDj8GUqbxoDWg",
+            authDomain: "ninja-fierstore-tut-d0556.firebaseapp.com",
+            databaseURL: "https://ninja-fierstore-tut-d0556.firebaseio.com",
+            projectId: "ninja-fierstore-tut-d0556",
+            storageBucket: "ninja-fierstore-tut-d0556.appspot.com",
+            messagingSenderId: "995604352990",
+            appId: "1:995604352990:web:0c24f8aadac74821e7174f",
+            // measurementId: "G-7GKZR78C1J"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          const db = firebase.firestore();
+          
+        </script>
+        <script src="./app.js"></script>
+    </body>
+</html>
